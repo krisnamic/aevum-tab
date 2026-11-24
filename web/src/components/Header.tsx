@@ -9,10 +9,10 @@ import { GitHubIcon } from "./Icons";
 import { useNetwork } from "@/lib/network";
 
 const links = [
-  { href: "/", label: "Setup" },
   { href: "/tabs", label: "Tabs" },
   { href: "/merchant", label: "Merchant" },
   { href: "/docs", label: "Docs" },
+  { href: "/setup", label: "Setup" },
 ];
 
 export function Header() {
@@ -26,12 +26,12 @@ export function Header() {
       <header className="topbar">
         <div className="shell">
           <Link href="/" className="brand">
-            <span className="brand-mark" aria-hidden="true" />
             <span className="brand-name">Tab</span>
+            <span className="brand-tag">on Aevum</span>
           </Link>
           <nav className="nav" aria-label="Main">
             {links.map((l) => {
-              const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
+              const active = pathname.startsWith(l.href);
               return (
                 <Link key={l.href} href={l.href} aria-current={active ? "page" : undefined}>
                   {l.label}

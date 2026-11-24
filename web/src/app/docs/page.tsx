@@ -82,7 +82,7 @@ export default function DocsPage() {
             <h2>Demo in 5 minutes</h2>
             <ol>
               <li>
-                On <a href="/">Setup</a>, connect a wallet and get tUSD8 plus a little tQDAY (Revoke and Reclaim are normal transactions).
+                On <a href="/setup">Setup</a>, connect a wallet and get tUSD8 plus a little tQDAY (Revoke and Reclaim are normal transactions).
               </li>
               <li>
                 On <a href="/tabs">Tabs</a>, press <em>Generate session key</em>, keep the 1.00 tUSD8 deposit, pick 1 hour and sign.

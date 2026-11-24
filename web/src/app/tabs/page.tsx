@@ -309,7 +309,7 @@ export default function TabsPage() {
               <div className="notice warn" role="status">
                 <strong>Not enough {token.symbol}</strong>
                 <span>
-                  This tab needs {deposit} {token.symbol}. See the <Link href="/">Setup</Link> page for how to get test tokens.
+                  This tab needs {deposit} {token.symbol}. See the <Link href="/setup">Setup</Link> page for how to get test tokens.
                 </span>
               </div>
             )}
