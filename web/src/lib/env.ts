@@ -72,4 +72,4 @@ export function networkByKey(key: string | null | undefined): Network | undefine
 export const walletConnectProjectId = process.env.NEXT_PUBLIC_WC_PROJECT_ID || undefined;
 
 /** Where the "Source" links and the clone command on the Docs page point. Override it for a fork or a preview deploy. */
-export const repoUrl = (process.env.NEXT_PUBLIC_REPO_URL?.trim() || "https://github.com/qday-io/aevum-starter-kit").replace(/\.git$|\/+$/g, "");
+export const repoUrl = (process.env.NEXT_PUBLIC_REPO_URL?.trim() || "https://github.com/krisnamic/aevum-tab").replace(/\.git$|\/+$/g, "");
