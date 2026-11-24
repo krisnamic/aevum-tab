@@ -130,19 +130,19 @@ export function Meter({ channel, entry, decimals, symbol }: { channel: Channel; 
     <div className="meter">
       <dl className="meter-stats">
         <div>
-          <dt>Calls served</dt>
+          <dt>Calls</dt>
           <dd>{entry ? entry.calls.toLocaleString("en-US") : "—"}</dd>
         </div>
         <div>
-          <dt>Used (signed off-chain)</dt>
+          <dt>Used</dt>
           <dd>{amount(used, decimals)}</dd>
         </div>
         <div>
-          <dt>Settled on-chain</dt>
+          <dt>Settled</dt>
           <dd className="good">{amount(channel.claimed, decimals)}</dd>
         </div>
         <div>
-          <dt>Deposit ({symbol})</dt>
+          <dt>Deposit</dt>
           <dd>{amount(channel.deposit, decimals)}</dd>
         </div>
       </dl>
@@ -152,7 +152,7 @@ export function Meter({ channel, entry, decimals, symbol }: { channel: Channel; 
       </div>
       <p className="fine">
         {entry ? `${entry.calls.toLocaleString("en-US")} calls · ` : ""}
-        {amount(used, decimals)} of {amount(channel.deposit, decimals)} {symbol} used · {amount(channel.claimed, decimals)} settled on-chain
+        {amount(used, decimals)} of {amount(channel.deposit, decimals)} {symbol} used (signed off-chain) · {amount(channel.claimed, decimals)} settled on-chain
         {entry ? "" : " · no live meter from the merchant"}
       </p>
     </div>
