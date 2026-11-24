@@ -24,7 +24,7 @@ Built for [Aevum Builder Challenge #1](https://dorahacks.io/hackathon/qday/detai
 | Relayer | [`0xdAdA5543F014807F653f6FD8680EB7A562b1D870`](https://explorer-test.qday.info/address/0xdAdA5543F014807F653f6FD8680EB7A562b1D870) |
 | Merchant | [`0x51C605E41E305ce1f57B06E664A3777a2850e4bf`](https://explorer-test.qday.info/address/0x51C605E41E305ce1f57B06E664A3777a2850e4bf) |
 | tUSD8 | [`0x456569838f1d43009A91ebA4263147Afd7233483`](https://explorer-test.qday.info/address/0x456569838f1d43009A91ebA4263147Afd7233483) |
-| Deployed commit | _pending_ |
+| Contract source | [`7f81090`](https://github.com/krisnamic/aevum-tab/tree/7f81090/contracts/src) |
 | Live app | _pending_ |
 
 The explorer's contract verifier is down, so check the source at the commit above.
