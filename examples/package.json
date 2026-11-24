@@ -1,0 +1,24 @@
+{
+  "name": "examples",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "check-setup": "tsx --env-file-if-exists=.env src/check-setup.ts",
+    "open-tab": "tsx --env-file-if-exists=.env src/open-tab.ts",
+    "agent": "tsx --env-file-if-exists=.env src/agent.ts",
+    "e2e": "tsx --env-file-if-exists=.env src/e2e.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aevum-kit/aevum": "workspace:*",
+    "@anthropic-ai/sdk": "1.13.0",
+    "viem": "2.57.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
