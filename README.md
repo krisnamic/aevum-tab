@@ -25,7 +25,7 @@ Built for [Aevum Builder Challenge #1](https://dorahacks.io/hackathon/qday/detai
 | Merchant | [`0x51C605E41E305ce1f57B06E664A3777a2850e4bf`](https://explorer-test.qday.info/address/0x51C605E41E305ce1f57B06E664A3777a2850e4bf) |
 | tUSD8 | [`0x456569838f1d43009A91ebA4263147Afd7233483`](https://explorer-test.qday.info/address/0x456569838f1d43009A91ebA4263147Afd7233483) |
 | Contract source | [`7f81090`](https://github.com/krisnamic/aevum-tab/tree/7f81090/contracts/src) |
-| Live app | _pending_ |
+| Live app | [https://web-production-5eea585c.up.railway.app](https://web-production-5eea585c.up.railway.app) |
 
 The explorer's contract verifier is down, so check the source at the commit above.
 
@@ -222,6 +222,8 @@ make deploy-aevum ACCOUNT=aevum-deployer
 Set `NEXT_PUBLIC_NETWORKS=aevum`, `NEXT_PUBLIC_TABS_AEVUM`, `NEXT_PUBLIC_DEPLOY_BLOCK_AEVUM`, a fresh `RELAYER_PRIVATE_KEY`, a fresh `MERCHANT_PRIVATE_KEY` and a `MERCHANT_ADMIN_TOKEN` in `web/.env.local`. Fund the relayer and merchant with a little tQDAY each.
 
 Host the web app as one long-running `next start` process (a VM, Railway, Fly). The merchant keeps vouchers in a JSON file and runs a settle watcher, so serverless hosts like Vercel won't work.
+
+The live app runs on Railway as one service. Railway builds with the root `build` and `start` scripts, so it needs no config file. Set the `web/.env.local` variables on the service, attach a volume at `/data`, and set `MERCHANT_STORE=/data/vouchers.json` so vouchers survive redeploys.
 
 ## Environment variables
 
