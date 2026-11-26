@@ -37,7 +37,7 @@ An agent made 500 paid calls on one tab. The chain saw two transactions:
 |---|---|
 | Deploy TabChannels | [`0x5f64d1c4…`](https://explorer-test.qday.info/tx/0x5f64d1c442827310959290e9bae456c5966d6ba1fddc457d6a7f8234755221e8) |
 | Open tab, 1 tUSD8 deposit, gasless via relayer | [`0x99237f3a…`](https://explorer-test.qday.info/tx/0x99237f3adc3c0c09ac713172bc8f5dfb4747575e8042c36511c1e17993b47b66) |
-| 500 calls, 0.5 tUSD8 in vouchers | off-chain, 50 ms per call |
+| 500 calls, 0.5 tUSD8 in vouchers | off-chain, no block wait |
 | Merchant closes: 0.5 tUSD8 paid, 0.5 refunded | [`0x00f575fe…`](https://explorer-test.qday.info/tx/0x00f575fe6e0fa2dbede5a6382e556c1f2e5f4e225b6f68363713dfb22e516fe6) |
 
 `pnpm example e2e` against the same deployment:

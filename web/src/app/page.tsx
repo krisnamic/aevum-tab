@@ -58,7 +58,7 @@ export default function Home() {
             <li className="offchain">
               <span>500 API calls</span>
               <span>0.50 tUSD8</span>
-              <span className="fine">500 vouchers, off-chain, ~50 ms each</span>
+              <span className="fine">500 vouchers, off-chain, no block wait</span>
             </li>
             <li>
               <span>Close</span>
